@@ -1,6 +1,9 @@
 * {
 	box-sizing: border-box;
 }
+body {
+	font-family: 'Quicksand';
+}
 header {
 	height: 20vh;
 	width: 100vw;
@@ -11,8 +14,12 @@ header {
 #nav-home {
 	flex-basis: 50vw;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	font-family: 'Righteous';
+}
+#nav-home h1 {
+	flex-basis: 25vw;
 }
 #nav-links {
 	flex-basis: 50vw;
@@ -23,8 +30,9 @@ header {
 ul {
 	list-style: none;
 }
-li {
+.nav-link {
 	padding: 0.25rem 0;
+	font-size: 1.25rem;
 }
 
 a {
