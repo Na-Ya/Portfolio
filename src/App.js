@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import image from './images/profile.png';
+import { Navbar, About } from './directory';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<h1 className="App-title">Test</h1>
-				</header>
-				<p className="App-intro">Test paragraph</p>
+				<Navbar />
+				<About />
 			</div>
 		);
 	}
