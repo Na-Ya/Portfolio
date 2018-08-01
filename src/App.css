@@ -4,7 +4,9 @@
 body {
 	font-family: 'Quicksand';
 }
-
+p {
+	font-size: 1.5rem;
+}
 /* navbar header  */
 header {
 	height: 20vh;
@@ -87,6 +89,7 @@ header a {
 .project-links {
 	display: flex;
 	justify-content: space-around;
+	align-items: baseline;
 	text-decoration: none;
 	padding-bottom: 1rem;
 }
@@ -118,4 +121,28 @@ header a {
 .experience-break {
 	width: 75vw;
 	border-top: none;
+}
+
+.job-parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.job-parent h3 {
+	font-size: 1.75rem;
+}
+.job-icon-parent {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.job-icon-parent img {
+	width: 3rem;
+	height: 3rem;
+}
+.job-info-parent {
+	width: 80%;
+	justify-content: flex-start;
+	flex-direction: column;
 }

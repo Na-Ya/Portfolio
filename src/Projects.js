@@ -22,6 +22,7 @@ const Projects = () => {
 						</div>
 						<div className="project-links">
 							<a href="#">LINK to PROJECT</a>
+							<h3>||</h3>
 							<a href="#">LINK to PROJECT</a>
 						</div>
 						{projects.length - 1 === index ? null : (
