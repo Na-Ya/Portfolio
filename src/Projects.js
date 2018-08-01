@@ -5,10 +5,9 @@ const Projects = () => {
 	return (
 		<div id="projects-parent">
 			<h1>Projects</h1>
-
-			{projects.map(projects => {
+			{projects.map((project, index) => {
 				return (
-					<div>
+					<div key={index}>
 						<h3>Project Title </h3>
 						<p>
 							Lorem ipsum dolor amet truffaut mustache viral, vexillologist
@@ -18,13 +17,16 @@ const Projects = () => {
 							tacos, williamsburg food truck try-hard sustainable bushwick
 							cronut umami PBR&B wayfarers trust fund.
 						</p>
-						<div class="project-image-parent">
+						<div className="project-image-parent">
 							<img src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051" />
 						</div>
-						<div class="project-links">
+						<div className="project-links">
 							<a href="#">LINK to PROJECT</a>
 							<a href="#">LINK to PROJECT</a>
 						</div>
+						{projects.length - 1 === index ? null : (
+							<hr className="project-break" />
+						)}
 					</div>
 				);
 			})}

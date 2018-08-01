@@ -65,6 +65,8 @@ header a {
 	height: 100%;
 }
 
+/* Projects section */
+
 #projects-parent {
 	display: flex;
 	width: 100vw;
@@ -85,4 +87,11 @@ header a {
 .project-links {
 	display: flex;
 	justify-content: space-around;
+	text-decoration: none;
+}
+.project-links a {
+	text-decoration: none;
+}
+.project-break {
+	width: 75vw;
 }
