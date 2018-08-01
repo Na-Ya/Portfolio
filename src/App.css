@@ -10,7 +10,7 @@ header {
 	height: 20vh;
 	width: 100vw;
 	display: flex;
-	background-color: #00a6ed;
+	background-color: rgb(43, 179, 209);
 	color: white;
 }
 #nav-home {
@@ -37,7 +37,7 @@ ul {
 	font-size: 1.25rem;
 }
 
-a {
+header a {
 	text-decoration: none;
 	color: white;
 }
@@ -46,13 +46,14 @@ a {
 
 #about-parent {
 	display: flex;
-	width: 100vw;
-	height: auto;
+	/* width: 100vw; */
+	/* height: auto; */
 	flex-direction: column;
 }
 #about-parent div {
 	display: flex;
-	flex-basis: 100vw;
+	/* flex-basis: 100vw; */
+	/* height: auto; */
 	justify-content: center;
 }
 #about-parent p {
@@ -61,5 +62,27 @@ a {
 
 #about-parent img {
 	width: 100%;
-	height: auto;
+	height: 100%;
+}
+
+#projects-parent {
+	display: flex;
+	width: 100vw;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+}
+#projects-parent h3 {
+	text-align: center;
+}
+
+.project-image-parent {
+	display: flex;
+	justify-content: center;
+}
+.project-links {
+	display: flex;
+	justify-content: space-around;
 }
