@@ -28,7 +28,7 @@ const Experience = () => {
 						</div>
 						{/* {experiences.length - 1 === index ? null : (
 							<hr className="experience-break" />
-						)} */}
+				        )} */}
 					</div>
 				);
 			})}

@@ -105,7 +105,6 @@ header a {
 }
 
 #experience-parent {
-	/* background-color: rgb(43, 179, 209); */
 	display: flex;
 	width: 100vw;
 	height: 100%;
@@ -131,13 +130,12 @@ header a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* border: 1px solid white; */
 	border-radius: 3px;
 	perspective: 1000px;
 	background-color: rgb(43, 179, 209);
 	box-shadow: 1px 1px 3px 1.5px rgb(180, 180, 180),
 		-1px -1px 3px 1.5px rgb(180, 180, 180);
-	margin: 0.5rem 0;
+	margin: 0.5rem 1rem;
 }
 .job-parent h3 {
 	font-size: 1.75rem;
@@ -158,3 +156,5 @@ header a {
 	flex-direction: column;
 	color: white;
 }
+
+/* card effect */
