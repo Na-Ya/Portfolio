@@ -77,6 +77,8 @@ header a {
 	justify-content: center;
 	align-items: center;
 	padding: 0 1rem;
+	background-color: rgb(43, 179, 209);
+	color: white;
 }
 #projects-parent h3 {
 	text-align: center;
@@ -95,13 +97,15 @@ header a {
 }
 .project-links a {
 	text-decoration: none;
+	color: white;
 }
 .project-break {
 	width: 75vw;
+	border-top: none;
 }
 
 #experience-parent {
-	background-color: rgb(43, 179, 209);
+	/* background-color: rgb(43, 179, 209); */
 	display: flex;
 	width: 100vw;
 	height: 100%;
@@ -111,12 +115,12 @@ header a {
 	padding: 0 1rem;
 }
 
-#experience-parent p,
+/* #experience-parent p,
 #experience-parent h1,
 #experience-parent h3,
 #experience-parent a {
 	color: white;
-}
+} */
 
 .experience-break {
 	width: 75vw;
@@ -127,6 +131,13 @@ header a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	/* border: 1px solid white; */
+	border-radius: 3px;
+	perspective: 1000px;
+	background-color: rgb(43, 179, 209);
+	box-shadow: 1px 1px 3px 1.5px rgb(180, 180, 180),
+		-1px -1px 3px 1.5px rgb(180, 180, 180);
+	margin: 0.5rem 0;
 }
 .job-parent h3 {
 	font-size: 1.75rem;
@@ -145,4 +156,5 @@ header a {
 	width: 80%;
 	justify-content: flex-start;
 	flex-direction: column;
+	color: white;
 }

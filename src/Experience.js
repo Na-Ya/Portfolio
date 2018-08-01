@@ -5,7 +5,7 @@ const Experience = () => {
 	return (
 		<div id="experience-parent">
 			<h1>Experience</h1>
-			<h4 style={{ margin: 0, color: 'white' }}>Tap for details</h4>
+			<h4 style={{ marginTop: 0, color: 'black' }}>Tap for details</h4>
 			{experiences.map((experience, index) => {
 				return (
 					<div key={index}>
@@ -26,9 +26,9 @@ const Experience = () => {
 								</p>
 							</div>
 						</div>
-						{experiences.length - 1 === index ? null : (
+						{/* {experiences.length - 1 === index ? null : (
 							<hr className="experience-break" />
-						)}
+						)} */}
 					</div>
 				);
 			})}
