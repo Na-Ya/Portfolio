@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import image from './images/profile.png';
-import { Navbar, About } from './directory';
+import { Navbar, About, Projects, Experience } from './directory';
 
 class App extends Component {
 	render() {
@@ -9,6 +9,8 @@ class App extends Component {
 			<div className="App">
 				<Navbar />
 				<About />
+				<Projects />
+				<Experience />
 			</div>
 		);
 	}
