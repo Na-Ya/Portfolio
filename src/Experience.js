@@ -5,6 +5,7 @@ const Experience = () => {
 	return (
 		<div id="experience-parent">
 			<h1>Experience</h1>
+			<h4 style={{ margin: 0, color: 'white' }}>Tap for details</h4>
 			{experiences.map((experience, index) => {
 				return (
 					<div key={index}>
