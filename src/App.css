@@ -195,6 +195,7 @@ header a {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
+	margin: 1rem 0rem;
 }
 
 /* hide back of pane during swap */
@@ -204,10 +205,12 @@ header a {
 	position: relative;
 	top: 0;
 	left: 0;
-	margin: 1rem 0rem;
 }
 .back {
 	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(43, 179, 209, 0.6);
 }
 
 /* front pane, placed above back */
