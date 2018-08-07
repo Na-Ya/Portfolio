@@ -31,7 +31,7 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-ul {
+header ul {
 	list-style: none;
 }
 .nav-link {
@@ -131,11 +131,9 @@ header a {
 	flex-direction: row;
 	justify-content: space-between;
 	border-radius: 3px;
-	perspective: 1000px;
 	background-color: rgb(43, 179, 209);
 	box-shadow: 1px 1px 3px 1.5px rgb(180, 180, 180),
 		-1px -1px 3px 1.5px rgb(180, 180, 180);
-	margin: 0.5rem 1rem;
 }
 .job-parent h3 {
 	font-size: 1.75rem;
@@ -157,4 +155,72 @@ header a {
 	color: white;
 }
 
+/* back of job info card */
+.job-info-parent-back {
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+.job-info-parent-back li {
+	font-size: 1.5rem;
+}
+.job-info-parent-back h3 {
+	text-align: center;
+}
+
 /* card effect */
+
+.flip-container {
+	perspective: 1000px;
+	/* margin: 1rem 0rem; */
+}
+/* flip the pane when hovered */
+/* .flip-container:hover .flipper,
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+} */
+.flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+	width: 90vw;
+	/* height: 480px; */
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	margin: 1rem 0rem;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+	backface-visibility: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(43, 179, 209, 0.6);
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
