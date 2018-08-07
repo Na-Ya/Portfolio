@@ -7,11 +7,9 @@ const Contact = () => {
 			<h1>Contact</h1>
 
 			<div id="contact-icons-parent">
-				<ul>
-					<li>Github</li>
-					<li>email</li>
-					<li>linkedin</li>
-				</ul>
+				<i class="fa fa-github fa-4x" aria-hidden="true" />
+				<i class="fa fa-github fa-4x" aria-hidden="true" />
+				<i class="fa fa-github fa-4x" aria-hidden="true" />
 			</div>
 		</div>
 	);
