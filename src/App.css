@@ -14,6 +14,8 @@ header {
 	display: flex;
 	background-color: rgb(43, 179, 209);
 	color: white;
+	position: fixed;
+	z-index: 5;
 }
 #nav-home {
 	flex-basis: 50vw;
@@ -47,6 +49,7 @@ header a {
 /* about section && biography  */
 
 #about-parent {
+	padding-top: 20vh;
 	display: flex;
 	/* width: 100vw; */
 	/* height: auto; */
@@ -249,4 +252,8 @@ header a {
 .icon-link {
 	text-decoration: none;
 	color: inherit;
+}
+
+.is-current {
+	background-color: red;
 }
