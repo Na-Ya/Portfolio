@@ -225,6 +225,7 @@ header a {
 	transform: rotateY(180deg);
 }
 
+/* contact section */
 #contact-parent {
 	display: flex;
 	width: 100vw;
@@ -242,4 +243,10 @@ header a {
 	flex-direction: row;
 	width: 100%;
 	height: 100%;
+	justify-content: space-around;
+	padding-bottom: 2rem;
+}
+.icon-link {
+	text-decoration: none;
+	color: inherit;
 }
