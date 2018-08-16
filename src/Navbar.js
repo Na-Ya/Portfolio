@@ -11,22 +11,21 @@ const NavBar = () => {
 			</div>
 			<div id="nav-links">
 				<nav>
-					{/* <ul>
-						<li className="nav-link">
-							<AnchorLink href="#projects-parent">Projects</AnchorLink>
-						</li>
-						<li className="nav-link">
-							<AnchorLink href="#experience-parent">Experience</AnchorLink>
-						</li>
-						<li className="nav-link">
-							<AnchorLink href="#contact-parent">Contact</AnchorLink>
-						</li>
-					</ul> */}
 					<Scrollspy
-						items={['projects-parent', 'experience-parent', 'contact-parent']}
+						items={[
+							'about-parent',
+							'projects-parent',
+							'experience-parent',
+							'contact-parent'
+						]}
 						currentClassName="is-current"
 						offset={-offset}
 					>
+						<li className="nav-link">
+							<AnchorLink href="#about-parent" offset={offset}>
+								About
+							</AnchorLink>
+						</li>
 						<li className="nav-link">
 							<AnchorLink href="#projects-parent" offset={offset}>
 								Projects
