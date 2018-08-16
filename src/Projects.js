@@ -13,9 +13,7 @@ const Projects = () => {
 							Lorem ipsum dolor amet truffaut mustache viral, vexillologist
 							PBR&B hella intelligentsia. Taxidermy put a bird on it kickstarter
 							before they sold out cronut vice. Kogi twee hashtag, pickled
-							pitchfork fashion axe ugh. Kickstarter brunch vinyl shabby chic
-							tacos, williamsburg food truck try-hard sustainable bushwick
-							cronut umami PBR&B wayfarers trust fund.
+							pitchfork fashion axe ugh.
 						</p>
 						<div className="project-image-parent">
 							<img src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051" />
