@@ -15,7 +15,6 @@ header {
 	flex-direction: column;
 	background-color: rgb(43, 179, 209);
 	color: white;
-	position: fixed;
 	z-index: 5;
 }
 #nav-home {
@@ -24,6 +23,7 @@ header {
 	align-items: flex-end;
 	justify-content: center;
 	font-family: 'Righteous';
+	height: 10vh;
 }
 #name {
 	margin: 0;
@@ -32,9 +32,17 @@ header {
 
 #nav-links {
 	flex-basis: 100vw;
+	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(43, 179, 209);
+}
+.newfixed {
+	position: fixed;
+	width: 100vw;
+	z-index: 6;
+	box-shadow: 1px 1px 1px 1px white, -1px -1px 1px 1px white;
 }
 header ul {
 	list-style: none;
@@ -57,7 +65,7 @@ header a {
 /* about section && biography  */
 
 #about-parent {
-	padding-top: 20vh;
+	/* padding-top: 20vh; */
 	display: flex;
 	/* width: 100vw; */
 	/* height: auto; */
