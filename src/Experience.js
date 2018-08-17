@@ -6,24 +6,28 @@ class Experience extends Component {
 		this.state = {};
 		this.resize = this.resize.bind(this);
 	}
-	componentDidMount() {}
+	componentDidMount() {
+		window.addEventListener('resize', this.resize);
+	}
 	resize(e) {
 		e.preventDefault();
 		let greatestHeight = 0;
 		let fronts = document.querySelectorAll('.front');
 		let backs = document.querySelectorAll('.back');
-		// let frontHeight = e.currentTarget.children[0].children[0].offsetHeight;
-		// let backHeight = e.currentTarget.children[0].children[1].offsetHeight;
-		// if (frontHeight > backHeight) {
-		// 	e.currentTarget.children[0].children[1].style.height = frontHeight + 'px';
-		// } else {
-		// 	e.currentTarget.children[0].children[0].style.height = backHeight + 'px';
-		// }
-		for (let i = 0; i < fronts.length; i++) {}
-		console.log('test', test[1].offsetHeight);
+		for (let i = 0; i < fronts.length; i++) {
+			if (fronts[i].offsetHeight > greatestHeight) {
+				greatestHeight = fronts[i].offsetHeight;
+			}
+			if (backs[i].offsetHeight > greatestHeight) {
+				greatestHeight = backs[i].offsetHeight;
+			}
+		}
+		for (let i = 0; i < fronts.length; i++) {
+			fronts[i].style.height = greatestHeight + 'px';
+			backs[i].style.height = greatestHeight + 'px';
+		}
 	}
 	render() {
-		const experiences = [1, 2];
 		return (
 			<div id="experience-parent">
 				<h1>Experience</h1>
