@@ -37,7 +37,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(43, 179, 209);
+	flex-wrap: wrap;
 }
+
 .newfixed {
 	position: fixed;
 	width: 100vw;
@@ -56,7 +58,11 @@ header ul {
 	border-bottom: 0;
 	transition: 0.5s all ease;
 }
-
+@media only screen and (max-width: 350px) {
+	.nav-link {
+		font-size: 1rem;
+	}
+}
 header a {
 	text-decoration: none;
 	color: white;
