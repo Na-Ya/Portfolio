@@ -34,24 +34,6 @@ class Experience extends Component {
 							onClick={e => {
 								e.preventDefault();
 								e.currentTarget.classList.toggle('flip');
-								// let frontHeight =
-								// 	e.currentTarget.children[0].children[0].offsetHeight;
-								// let backHeight =
-								// 	e.currentTarget.children[0].children[1].offsetHeight;
-								// if (frontHeight > backHeight) {
-								// 	e.currentTarget.children[0].children[1].style.height =
-								// 		frontHeight + 'px';
-								// } else {
-								// 	e.currentTarget.children[0].children[0].style.height =
-								// 		backHeight + 'px';
-								// }
-								// e.currentTarget.children[0].children[0].style.height = '20px';
-								console.log(
-									'front',
-									e.currentTarget.children[0].children[0].offsetHeight,
-									'back',
-									e.currentTarget.children[0].children[1].offsetHeight
-								);
 							}}
 						>
 							<div className="flipper">

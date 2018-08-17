@@ -8,7 +8,7 @@ const Projects = () => {
 			{projects.map((project, index) => {
 				return (
 					<div key={index}>
-						<h3>Project Title </h3>
+						<h2>Project Title </h2>
 						<p>
 							Lorem ipsum dolor amet truffaut mustache viral, vexillologist
 							PBR&B hella intelligentsia. Taxidermy put a bird on it kickstarter
@@ -19,9 +19,9 @@ const Projects = () => {
 							<img src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051" />
 						</div>
 						<div className="project-links">
-							<a href="#">LINK to PROJECT</a>
+							<a href="#">GitHub&nbsp; &nbsp;</a>
 							<h3>||</h3>
-							<a href="#">LINK to PROJECT</a>
+							<a href="#">App Link</a>
 						</div>
 						{projects.length - 1 === index ? null : (
 							<hr className="project-break" />
