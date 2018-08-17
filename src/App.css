@@ -8,69 +8,84 @@ p {
 	font-size: 1.5rem;
 }
 /* navbar header  */
+@media only screen and (min-width: 0px) {
+	header {
+		height: 20vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(43, 179, 209);
+		color: white;
+		z-index: 5;
+	}
+	#nav-home {
+		flex-basis: 100vw;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		font-family: 'Righteous';
+		height: 10vh;
+	}
+	#name {
+		margin: 0;
+		font-size: 3rem;
+	}
 
-header {
-	height: 20vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	background-color: rgb(43, 179, 209);
-	color: white;
-	z-index: 5;
-}
-#nav-home {
-	flex-basis: 100vw;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	font-family: 'Righteous';
-	height: 10vh;
-}
-#name {
-	margin: 0;
-	font-size: 3rem;
-}
+	#nav-links {
+		flex-basis: 100vw;
+		height: 10vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(43, 179, 209);
+		flex-wrap: wrap;
+	}
 
-#nav-links {
-	flex-basis: 100vw;
-	height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(43, 179, 209);
-	flex-wrap: wrap;
-}
-
-.newfixed {
-	position: fixed;
-	width: 100vw;
-	z-index: 6;
-	box-shadow: 1px 1px 1px 1px white, -1px -1px 1px 1px white;
-}
-header ul {
-	list-style: none;
-	list-style-type: none;
-	padding: 0;
-}
-.nav-link {
-	padding: 0 0.25rem;
-	font-size: 1.25rem;
-	display: inline;
-	border-bottom: 0;
-	transition: 0.5s all ease;
-}
-@media only screen and (max-width: 350px) {
+	.newfixed {
+		position: fixed;
+		width: 100vw;
+		z-index: 6;
+		box-shadow: 1px 1px 1px 1px white, -1px -1px 1px 1px white;
+	}
+	header ul {
+		list-style: none;
+		list-style-type: none;
+		padding: 0;
+	}
 	.nav-link {
-		font-size: 1rem;
+		margin: 0 0.25rem;
+		font-size: 1.25rem;
+		display: inline;
+		border-bottom: 0;
+		transition: 0.5s all ease;
+	}
+	@media only screen and (max-width: 350px) {
+		.nav-link {
+			font-size: 1rem;
+		}
+	}
+	header a {
+		text-decoration: none;
+		color: white;
 	}
 }
-header a {
-	text-decoration: none;
-	color: white;
+
+@media only screen and (min-width: 500px) {
+	.nav-link {
+		margin: 0 1rem;
+		font-size: 1.5rem;
+	}
+	.nav-link:hover {
+		margin: 0 1rem;
+		font-size: 1.6rem;
+	}
+	#name {
+		font-size: 3.5rem;
+	}
 }
 
 /* about section && biography  */
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 0px) {
 	#about-parent {
 		display: flex;
 		flex-direction: column;
@@ -89,6 +104,9 @@ header a {
 		flex: 0 1 100vw;
 	}
 }
+/* @media only screen and (min-width: 500px) {
+
+} */
 @media only screen and (min-width: 500px) {
 	#about-parent {
 		display: flex;
@@ -123,43 +141,57 @@ header a {
 	} */
 }
 /* Projects section */
+@media only screen and (min-width: 0px) {
+	#projects-parent {
+		display: flex;
+		width: 100vw;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 1rem;
+		background-color: rgb(43, 179, 209);
+		color: white;
+	}
+	#projects-parent h2 {
+		text-align: center;
+	}
 
-#projects-parent {
-	display: flex;
-	width: 100vw;
-	height: 100%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0 1rem;
-	background-color: rgb(43, 179, 209);
-	color: white;
+	.project-image-parent {
+		display: flex;
+		justify-content: center;
+	}
+	.project-links {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+		text-decoration: none;
+		padding-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+	.project-links a {
+		text-decoration: none;
+		color: white;
+	}
+	.project-break {
+		width: 75vw;
+		border-top: none;
+	}
 }
-#projects-parent h2 {
-	text-align: center;
-}
-
-.project-image-parent {
-	display: flex;
-	justify-content: center;
-}
-.project-links {
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-	text-decoration: none;
-	padding-bottom: 1rem;
-	font-size: 1.5rem;
-}
-.project-links a {
-	text-decoration: none;
-	color: white;
-}
-.project-break {
-	width: 75vw;
-	border-top: none;
+@media only screen and (min-width: 500px) {
+	.project-content {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.project-content p {
+		flex-basis: 60vw;
+		padding: 0 1rem;
+	}
 }
 
+/* experience section */
 #experience-parent {
 	display: flex;
 	width: 100vw;
@@ -169,13 +201,6 @@ header a {
 	align-items: center;
 	padding: 0 1rem;
 }
-
-/* #experience-parent p,
-#experience-parent h1,
-#experience-parent h3,
-#experience-parent a {
-	color: white;
-} */
 
 .experience-break {
 	width: 75vw;
