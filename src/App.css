@@ -230,7 +230,7 @@ p {
 		width: 20%;
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	.job-icon-parent img {
 		width: 3rem;
@@ -319,13 +319,19 @@ p {
 	.front,
 	.back {
 		width: 40vw;
-		margin: 1rem;
+		min-width: 350px;
 	}
 	#jobs-parent {
 		display: flex;
+		width: 100vw;
+		padding: 0 2rem;
 		flex-direction: row;
-		/* align-content: space-between; */
-		/* flex-wrap: wrap; */
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.job-icon-parent img {
+		width: 4rem;
+		height: 4rem;
 	}
 }
 
