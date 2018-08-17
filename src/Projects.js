@@ -21,7 +21,7 @@ const Projects = () => {
 							</div>
 						</div>
 						<div className="project-links">
-							<a href="#">GitHub&nbsp; &nbsp;</a>
+							<a href="#">&nbsp;GitHub&nbsp; </a>
 							<h3>||</h3>
 							<a href="#">App Link</a>
 						</div>
