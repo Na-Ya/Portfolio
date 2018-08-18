@@ -66,7 +66,7 @@ p {
 	}
 	header a {
 		text-decoration: none;
-		color: white;
+		color: rgb(245, 245, 245);
 	}
 }
 
@@ -190,10 +190,21 @@ p {
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: center;
+		width: 100vw;
+		/* padding: 0 2rem; */
 	}
-	.project-content p {
+	.project-content .project-info {
 		flex-basis: 60vw;
 		padding: 0 1rem;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.project-info p {
+		margin: 0.5rem;
+	}
+	.project-content div {
+		display: flex;
+		/* flex-basis: 60vw; */
 	}
 }
 
@@ -363,9 +374,12 @@ p {
 
 .is-current {
 	/* background-color: white; */
-	color: white;
 	border-bottom: 2px solid white;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+}
+
+.is-current a {
+	color: white;
 }
