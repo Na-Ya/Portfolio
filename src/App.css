@@ -163,7 +163,8 @@ p {
 	}
 	.project-image-parent img {
 		width: 80%;
-		height: auto;
+		max-height: 375px;
+		max-width: 450px;
 		border-radius: 3px;
 	}
 	.project-links {
