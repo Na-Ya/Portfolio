@@ -161,6 +161,11 @@ p {
 		display: flex;
 		justify-content: center;
 	}
+	.project-image-parent img {
+		width: 80%;
+		height: auto;
+		border-radius: 3px;
+	}
 	.project-links {
 		display: flex;
 		justify-content: space-around;
