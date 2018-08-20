@@ -36,7 +36,7 @@ const Projects = () => {
 				<h2>cycleTracker</h2>
 				<div className="project-content">
 					<div className="project-info">
-						<p className="project-title">Role: Fullstack Software Engineer</p>
+						<p>Role: Fullstack Software Engineer</p>
 						<p>
 							Tech Stack: Built with JavaScript, D3.js, Mapbox api, and Express.
 						</p>
