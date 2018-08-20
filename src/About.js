@@ -3,10 +3,13 @@ import profile from './images/profile.png';
 const About = () => {
 	return (
 		<div id="about-parent">
-			<div>
-				<img src={profile} />
-			</div>
-			<div>
+			<div
+				className="about-avatar"
+				style={{
+					backgroundImage: `url(${profile})`
+				}}
+			/>
+			<div className="about-content">
 				<p>
 					Hot chicken air plant poutine, cliche mumblecore gentrify chillwave.
 					Health goth ethical hexagon salvia freegan mlkshk normcore meggings

@@ -5,30 +5,63 @@ const Projects = () => {
 	return (
 		<div id="projects-parent">
 			<h1>Projects</h1>
-			{projects.map((project, index) => {
-				return (
-					<div key={index}>
-						<h3>Project Title </h3>
+			<div>
+				<h2>RepliCode</h2>
+				<div className="project-content">
+					<div className="project-info">
+						<p>Role: Fullstack Software Engineer</p>
 						<p>
-							Lorem ipsum dolor amet truffaut mustache viral, vexillologist
-							PBR&B hella intelligentsia. Taxidermy put a bird on it kickstarter
-							before they sold out cronut vice. Kogi twee hashtag, pickled
-							pitchfork fashion axe ugh.
+							Tech Stack: React, Redux, AWS S3, Docker, Sequelize, Express, Web
+							Audio api.
 						</p>
-						<div className="project-image-parent">
-							<img src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051" />
-						</div>
-						<div className="project-links">
-							<a href="#">LINK to PROJECT</a>
-							<h3>||</h3>
-							<a href="#">LINK to PROJECT</a>
-						</div>
-						{projects.length - 1 === index ? null : (
-							<hr className="project-break" />
-						)}
+						<p>
+							Replicode is a content creation platform for creating interactive
+							coding tutorials.
+						</p>
 					</div>
-				);
-			})}
+					<div className="project-image-parent">
+						<img src="https://i.imgur.com/LApgIyP.gif" />
+					</div>
+				</div>
+				<div className="project-links">
+					<a href="https://github.com/RepliCode/RepliCode">
+						&nbsp;GitHub&nbsp;{' '}
+					</a>
+					<h3>||</h3>
+					<a href="https://replicode.herokuapp.com/">App Link</a>
+				</div>
+				<hr className="project-break" />
+			</div>
+			<div>
+				<h2>cycleTracker</h2>
+				<div className="project-content">
+					<div className="project-info">
+						<p>Role: Fullstack Software Engineer</p>
+						<p>
+							Tech Stack: Built with JavaScript, D3.js, Mapbox api, and Express.
+						</p>
+						<p>
+							cycleTracker is a data visualization/simulation of Citi bike rides
+							over the course of a day in NYC.
+						</p>
+					</div>
+					<div className="project-image-parent">
+						<img src="https://i.imgur.com/c1CqMfH.png" />
+					</div>
+				</div>
+				<div className="project-links">
+					<a href="https://github.com/cycleTracker/cycleTracker">
+						&nbsp;GitHub&nbsp;{' '}
+					</a>
+					<h3>||</h3>
+					<a
+						href="https://citicycletracker.herokuapp.com/
+"
+					>
+						App Link
+					</a>
+				</div>
+			</div>
 		</div>
 	);
 };
