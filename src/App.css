@@ -236,7 +236,7 @@ p {
 	.job-parent {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		border-radius: 3px;
 		background-color: rgb(43, 179, 209);
 		box-shadow: 1px 1px 3px 1.5px rgb(180, 180, 180),
@@ -251,6 +251,10 @@ p {
 		justify-content: flex-start;
 		flex-direction: column;
 		color: white;
+	}
+	.job-info-parent .darker {
+		color: rgba(255, 255, 255, 0.856);
+		font-size: 1.25rem;
 	}
 
 	/* back of job info card */
@@ -333,11 +337,16 @@ p {
 	}
 	#jobs-parent {
 		display: flex;
-		width: 100vw;
-		padding: 0 2rem;
+		width: 90vw;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: center;
 		flex-wrap: wrap;
+	}
+	#jobs-parent > div {
+		margin: 0 2rem;
+	}
+	.center {
+		text-align: center;
 	}
 }
 

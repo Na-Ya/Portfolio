@@ -3,12 +3,17 @@ import React, { Component } from 'react';
 class Experience extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			width: 0
+		};
 		this.resize = this.resize.bind(this);
 	}
 	componentDidMount() {
 		this.resize();
 		window.addEventListener('resize', this.resize);
+		window.addEventListener('resize', () => {
+			this.setState({ width: window.innerWidth });
+		});
 	}
 	resize(e) {
 		if (e) {
@@ -48,31 +53,30 @@ class Experience extends Component {
 						<div className="flipper">
 							<div className="job-parent front">
 								<div className="job-info-parent">
-									<h3 id="job-title">This is a job title</h3>
-									<p>Company Name</p>
-									<p>11-11-1111 - 11-11-1111</p>
+									<h3 id="job-title" className="center">
+										Teaching Fellow
+									</h3>
+									<p className="darker">Fullstack Academy of Code</p>
+									<p className="darker">07/2018 - Present</p>
 									<p>
-										Migas pitchfork banh mi master cleanse ugh. Salvia venmo
-										palo santo raclette messenger bag franzen normcore jianbing.{' '}
+										Fullstack Academy is an immersive software engineering
+										coding bootcamp located in New York City and Chicago.
 									</p>
 								</div>
 							</div>
 							<div className="job-parent back">
 								<div className="job-info-parent-back">
-									<h3 id="job-title">This is a job title</h3>
+									<h3 id="job-title">Teaching Fellow</h3>
 									<ul>
-										<li>Keytar bitters slow-carb authentic cliche.</li>{' '}
 										<li>
-											Fam brunch meh, gluten-free vaporware etsy pok pok green
-											juice retro craft beer.
-										</li>
+											Daily mentorship of 28 students on engineering technical
+											concepts, algorithms, software architecture, debugging
+											strategies and writing clean code
+										</li>{' '}
 										<li>
-											Unicorn ennui leggings skateboard pinterest. Mlkshk cred
-											synth actually.
-										</li>
-										<li>
-											Unicorn ennui leggings skateboard pinterest. Mlkshk cred
-											synth actually.
+											Leading bi-weekly interactive review lectures covering
+											implementation of full-range of APIs and best practices of
+											Fullstack's NERDS stack
 										</li>
 									</ul>
 								</div>
@@ -89,38 +93,78 @@ class Experience extends Component {
 						<div className="flipper">
 							<div className="job-parent front">
 								<div className="job-info-parent">
-									<h3 id="job-title">This is a job title</h3>
-									<p>Company Name</p>
-									<p>11-11-1111 - 11-11-1111</p>
+									<h3 id="job-title">Teaching Fellow</h3>
+									<p className="darker">Fullstack Academy of Code</p>
+									<p className="darker">07/2018 - Present</p>
 									<p>
-										Migas pitchfork banh mi master cleanse ugh. Salvia
-										venNEEVVERmo palo santo raclette NEVER messenger bag franzen
-										normcore jianbing.{' '}
+										Fullstack Academy is an immersive software engineering
+										coding bootcamp located in New York City and Chicago.
 									</p>
 								</div>
 							</div>
 							<div className="job-parent back">
 								<div className="job-info-parent-back">
-									<h3 id="job-title">This is a job title</h3>
+									<h3 id="job-title">Teaching Fellow</h3>
 									<ul>
 										<li>
-											Keytar bitters slow-carb authentic cliche weird weird
-											weird.
+											Daily mentorship of 28 students on engineering technical
+											concepts, algorithms, software architecture, debugging
+											strategies and writing clean code
 										</li>{' '}
 										<li>
-											Fam brunch meh, gluten-free vaporware etsy pok pok green
-											juice retro craft beer.
+											Leading bi-weekly interactive review lectures covering
+											implementation of full-range of APIs and best practices of
+											Fullstack's NERDS stack
 										</li>
-										<li>
-											Unicorn ennui leggings skateboard pinterest. dif cred
-											synth actually.
-										</li>
-										<li>Unicorn ennui ljknsdly.</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div
+						className="flip-container"
+						onClick={e => {
+							e.preventDefault();
+							e.currentTarget.classList.toggle('flip');
+						}}
+					>
+						<div className="flipper">
+							<div className="job-parent front">
+								<div className="job-info-parent">
+									<h3 id="job-title">Teaching Fellow</h3>
+									<p className="darker">Fullstack Academy of Code</p>
+									<p className="darker">07/2018 - Present</p>
+									<p>
+										Fullstack Academy is an immersive software engineering
+										coding bootcamp located in New York City and Chicago.
+									</p>
+								</div>
+							</div>
+							<div className="job-parent back">
+								<div className="job-info-parent-back">
+									<h3 id="job-title">Teaching Fellow</h3>
+									<ul>
+										<li>
+											Daily mentorship of 28 students on engineering technical
+											concepts, algorithms, software architecture, debugging
+											strategies and writing clean code
+										</li>{' '}
+										<li>
+											Leading bi-weekly interactive review lectures covering
+											implementation of full-range of APIs and best practices of
+											Fullstack's NERDS stack
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					{window.innerWidth >= 1280 ? (
+						<div className="space-holder">
+							<div className="front" />
+							<div className="back" />
+						</div>
+					) : null}
 				</div>
 			</div>
 		);
