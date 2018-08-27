@@ -4,8 +4,16 @@
 body {
 	font-family: 'Quicksand';
 }
+h1,
+h2,
+h3 {
+	font-family: 'Righteous';
+}
 p {
 	font-size: 1.5rem;
+}
+.pop {
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 /* navbar header  */
 @media only screen and (min-width: 0px) {
@@ -155,6 +163,7 @@ p {
 	}
 	#projects-parent h2 {
 		text-align: center;
+		font-size: 1.75rem;
 	}
 
 	.project-image-parent {
