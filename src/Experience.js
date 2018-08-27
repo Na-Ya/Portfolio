@@ -47,12 +47,6 @@ class Experience extends Component {
 					>
 						<div className="flipper">
 							<div className="job-parent front">
-								{/* <div className="job-icon-parent">
-									<img
-										id="job-icon"
-										src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051"
-									/>
-								</div> */}
 								<div className="job-info-parent">
 									<h3 id="job-title">This is a job title</h3>
 									<p>Company Name</p>
@@ -94,12 +88,6 @@ class Experience extends Component {
 					>
 						<div className="flipper">
 							<div className="job-parent front">
-								{/* <div className="job-icon-parent">
-									<img
-										id="job-icon"
-										src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051"
-									/>
-								</div> */}
 								<div className="job-info-parent">
 									<h3 id="job-title">This is a job title</h3>
 									<p>Company Name</p>
