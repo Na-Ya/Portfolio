@@ -7,17 +7,18 @@ class Experience extends Component {
 		this.resize = this.resize.bind(this);
 	}
 	componentDidMount() {
+		this.resize();
 		window.addEventListener('resize', this.resize);
 	}
 	resize(e) {
-		e.preventDefault();
+		if (e) {
+			e.preventDefault();
+		}
 		let greatestHeight = 0;
 		let fronts = document.querySelectorAll('.front');
-		// .map(front => (front.style.height = 'inherit'));
 		let backs = document.querySelectorAll('.back');
-		// .map(front => (front.style.height = 'inherit'));
-		fronts.forEach(front => (front.style.height = 'inherit')); //resetting heights when viewport size is changed
-		backs.forEach(front => (front.style.height = 'inherit'));
+		fronts.forEach(front => (front.style.height = 'auto')); //resetting heights when viewport size is changed
+		backs.forEach(front => (front.style.height = 'auto'));
 		for (let i = 0; i < fronts.length; i++) {
 			if (fronts[i].offsetHeight > greatestHeight) {
 				greatestHeight = fronts[i].offsetHeight;
@@ -30,7 +31,6 @@ class Experience extends Component {
 			fronts[i].style.height = greatestHeight + 'px';
 			backs[i].style.height = greatestHeight + 'px';
 		}
-		console.log('greatest height', greatestHeight);
 	}
 	render() {
 		return (
@@ -40,7 +40,6 @@ class Experience extends Component {
 				<div id="jobs-parent">
 					<div
 						className="flip-container"
-						onLoad={this.resize}
 						onClick={e => {
 							e.preventDefault();
 							e.currentTarget.classList.toggle('flip');
@@ -48,12 +47,12 @@ class Experience extends Component {
 					>
 						<div className="flipper">
 							<div className="job-parent front">
-								<div className="job-icon-parent">
+								{/* <div className="job-icon-parent">
 									<img
 										id="job-icon"
 										src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051"
 									/>
-								</div>
+								</div> */}
 								<div className="job-info-parent">
 									<h3 id="job-title">This is a job title</h3>
 									<p>Company Name</p>
@@ -88,7 +87,6 @@ class Experience extends Component {
 					</div>
 					<div
 						className="flip-container"
-						onLoad={this.resize}
 						onClick={e => {
 							e.preventDefault();
 							e.currentTarget.classList.toggle('flip');
@@ -96,12 +94,12 @@ class Experience extends Component {
 					>
 						<div className="flipper">
 							<div className="job-parent front">
-								<div className="job-icon-parent">
+								{/* <div className="job-icon-parent">
 									<img
 										id="job-icon"
 										src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051"
 									/>
-								</div>
+								</div> */}
 								<div className="job-info-parent">
 									<h3 id="job-title">This is a job title</h3>
 									<p>Company Name</p>
