@@ -13,7 +13,11 @@ class Experience extends Component {
 		e.preventDefault();
 		let greatestHeight = 0;
 		let fronts = document.querySelectorAll('.front');
+		// .map(front => (front.style.height = 'inherit'));
 		let backs = document.querySelectorAll('.back');
+		// .map(front => (front.style.height = 'inherit'));
+		fronts.forEach(front => (front.style.height = 'inherit')); //resetting heights when viewport size is changed
+		backs.forEach(front => (front.style.height = 'inherit'));
 		for (let i = 0; i < fronts.length; i++) {
 			if (fronts[i].offsetHeight > greatestHeight) {
 				greatestHeight = fronts[i].offsetHeight;
@@ -26,6 +30,7 @@ class Experience extends Component {
 			fronts[i].style.height = greatestHeight + 'px';
 			backs[i].style.height = greatestHeight + 'px';
 		}
+		console.log('greatest height', greatestHeight);
 	}
 	render() {
 		return (
