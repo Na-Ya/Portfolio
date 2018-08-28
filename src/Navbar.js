@@ -25,7 +25,9 @@ const NavBar = () => {
 	return (
 		<header>
 			<div id="nav-home">
-				<h1 id="name">Nabil Yafai</h1>
+				<h1 id="name" className="pop">
+					Nabil Yafai
+				</h1>
 			</div>
 			<div id="nav-links">
 				<nav>

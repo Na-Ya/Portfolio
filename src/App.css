@@ -4,8 +4,16 @@
 body {
 	font-family: 'Quicksand';
 }
+h1,
+h2,
+h3 {
+	font-family: 'Righteous';
+}
 p {
 	font-size: 1.5rem;
+}
+.pop {
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 /* navbar header  */
 @media only screen and (min-width: 0px) {
@@ -155,6 +163,7 @@ p {
 	}
 	#projects-parent h2 {
 		text-align: center;
+		font-size: 1.75rem;
 	}
 
 	.project-image-parent {
@@ -236,7 +245,7 @@ p {
 	.job-parent {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		border-radius: 3px;
 		background-color: rgb(43, 179, 209);
 		box-shadow: 1px 1px 3px 1.5px rgb(180, 180, 180),
@@ -245,21 +254,16 @@ p {
 	.job-parent h3 {
 		font-size: 1.75rem;
 	}
-	.job-icon-parent {
-		width: 20%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.job-icon-parent img {
-		width: 3rem;
-		height: 3rem;
-	}
+
 	.job-info-parent {
 		width: 80%;
 		justify-content: flex-start;
 		flex-direction: column;
 		color: white;
+	}
+	.job-info-parent .darker {
+		color: rgba(255, 255, 255, 0.856);
+		font-size: 1.25rem;
 	}
 
 	/* back of job info card */
@@ -317,7 +321,7 @@ p {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: rgb(43, 179, 209, 0.6);
+		background-color: rgb(43, 179, 209, 0.7);
 	}
 
 	/* front pane, placed above back */
@@ -342,15 +346,16 @@ p {
 	}
 	#jobs-parent {
 		display: flex;
-		width: 100vw;
-		padding: 0 2rem;
+		width: 90vw;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
-	.job-icon-parent img {
-		width: 4rem;
-		height: 4rem;
+	#jobs-parent > div {
+		margin: 0 2rem;
+	}
+	.center {
+		text-align: center;
 	}
 }
 

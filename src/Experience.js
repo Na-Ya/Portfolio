@@ -3,21 +3,27 @@ import React, { Component } from 'react';
 class Experience extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			width: 0
+		};
 		this.resize = this.resize.bind(this);
 	}
 	componentDidMount() {
+		this.resize();
 		window.addEventListener('resize', this.resize);
+		window.addEventListener('resize', () => {
+			this.setState({ width: window.innerWidth });
+		});
 	}
 	resize(e) {
-		e.preventDefault();
+		if (e) {
+			e.preventDefault();
+		}
 		let greatestHeight = 0;
 		let fronts = document.querySelectorAll('.front');
-		// .map(front => (front.style.height = 'inherit'));
 		let backs = document.querySelectorAll('.back');
-		// .map(front => (front.style.height = 'inherit'));
-		fronts.forEach(front => (front.style.height = 'inherit')); //resetting heights when viewport size is changed
-		backs.forEach(front => (front.style.height = 'inherit'));
+		fronts.forEach(front => (front.style.height = 'auto')); //resetting heights when viewport size is changed
+		backs.forEach(front => (front.style.height = 'auto'));
 		for (let i = 0; i < fronts.length; i++) {
 			if (fronts[i].offsetHeight > greatestHeight) {
 				greatestHeight = fronts[i].offsetHeight;
@@ -30,7 +36,6 @@ class Experience extends Component {
 			fronts[i].style.height = greatestHeight + 'px';
 			backs[i].style.height = greatestHeight + 'px';
 		}
-		console.log('greatest height', greatestHeight);
 	}
 	render() {
 		return (
@@ -40,7 +45,6 @@ class Experience extends Component {
 				<div id="jobs-parent">
 					<div
 						className="flip-container"
-						onLoad={this.resize}
 						onClick={e => {
 							e.preventDefault();
 							e.currentTarget.classList.toggle('flip');
@@ -48,38 +52,31 @@ class Experience extends Component {
 					>
 						<div className="flipper">
 							<div className="job-parent front">
-								<div className="job-icon-parent">
-									<img
-										id="job-icon"
-										src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051"
-									/>
-								</div>
 								<div className="job-info-parent">
-									<h3 id="job-title">This is a job title</h3>
-									<p>Company Name</p>
-									<p>11-11-1111 - 11-11-1111</p>
+									<h3 id="job-title" className="center">
+										Teaching Fellow
+									</h3>
+									<p className="darker">Fullstack Academy of Code</p>
+									<p className="darker">07/2018 - Present</p>
 									<p>
-										Migas pitchfork banh mi master cleanse ugh. Salvia venmo
-										palo santo raclette messenger bag franzen normcore jianbing.{' '}
+										Fullstack Academy is an immersive software engineering
+										coding bootcamp located in New York City and Chicago.
 									</p>
 								</div>
 							</div>
 							<div className="job-parent back">
 								<div className="job-info-parent-back">
-									<h3 id="job-title">This is a job title</h3>
+									<h3 id="job-title">Teaching Fellow</h3>
 									<ul>
-										<li>Keytar bitters slow-carb authentic cliche.</li>{' '}
 										<li>
-											Fam brunch meh, gluten-free vaporware etsy pok pok green
-											juice retro craft beer.
-										</li>
+											Daily mentorship of 28 students on engineering technical
+											concepts, algorithms, software architecture, debugging
+											strategies and writing clean code
+										</li>{' '}
 										<li>
-											Unicorn ennui leggings skateboard pinterest. Mlkshk cred
-											synth actually.
-										</li>
-										<li>
-											Unicorn ennui leggings skateboard pinterest. Mlkshk cred
-											synth actually.
+											Leading bi-weekly interactive review lectures covering
+											implementation of full-range of APIs and best practices of
+											Fullstack's NERDS stack
 										</li>
 									</ul>
 								</div>
@@ -88,7 +85,6 @@ class Experience extends Component {
 					</div>
 					<div
 						className="flip-container"
-						onLoad={this.resize}
 						onClick={e => {
 							e.preventDefault();
 							e.currentTarget.classList.toggle('flip');
@@ -96,45 +92,93 @@ class Experience extends Component {
 					>
 						<div className="flipper">
 							<div className="job-parent front">
-								<div className="job-icon-parent">
-									<img
-										id="job-icon"
-										src="https://vignette.wikia.nocookie.net/powerlisting/images/1/18/Yin-Yang.png/revision/latest?cb=20121028014051"
-									/>
-								</div>
 								<div className="job-info-parent">
-									<h3 id="job-title">This is a job title</h3>
-									<p>Company Name</p>
-									<p>11-11-1111 - 11-11-1111</p>
+									<h3 id="job-title" className="center">
+										Admissions Coordinator
+									</h3>
+									<p className="darker">InterExchange</p>
+									<p className="darker">05/2014 - 03/2018</p>
 									<p>
-										Migas pitchfork banh mi master cleanse ugh. Salvia
-										venNEEVVERmo palo santo raclette NEVER messenger bag franzen
-										normcore jianbing.{' '}
+										InterExchange manages cultural exchange programs for
+										participants from more than 60 countries and for Americans
+										who work and volunteer abroad.
 									</p>
 								</div>
 							</div>
 							<div className="job-parent back">
 								<div className="job-info-parent-back">
-									<h3 id="job-title">This is a job title</h3>
+									<h3 id="job-title">Admissions Coordinator</h3>
 									<ul>
 										<li>
-											Keytar bitters slow-carb authentic cliche weird weird
-											weird.
-										</li>{' '}
-										<li>
-											Fam brunch meh, gluten-free vaporware etsy pok pok green
-											juice retro craft beer.
+											Organized all incoming documents and payment information
+											for over 600 applicants per year.
 										</li>
 										<li>
-											Unicorn ennui leggings skateboard pinterest. dif cred
-											synth actually.
+											Created user guides, videos, and GIFs for users of our
+											application platform.
 										</li>
-										<li>Unicorn ennui ljknsdly.</li>
+										<li>
+											Assisted engineering team with testing new features for
+											the application platform.
+										</li>
+										<li>
+											Used GitHub to make edits to the InterExchange website and
+											publish new content.
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div
+						className="flip-container"
+						onClick={e => {
+							e.preventDefault();
+							e.currentTarget.classList.toggle('flip');
+						}}
+					>
+						<div className="flipper">
+							<div className="job-parent front">
+								<div className="job-info-parent">
+									<h3 id="job-title" className="center">
+										Student Advocacy Assistant
+									</h3>
+									<p className="darker">NYU School of Engineering</p>
+									<p className="darker">10/2013 - 05/2014</p>
+									<p>
+										The New York University Tandon School of Engineering is the
+										engineering and applied sciences school of New York
+										University.
+									</p>
+								</div>
+							</div>
+							<div className="job-parent back">
+								<div className="job-info-parent-back">
+									<h3 id="job-title">Student Advocacy Assistant</h3>
+									<ul>
+										<li>
+											Developed spreadsheets, forms, brochures, and posters for
+											the department.
+										</li>{' '}
+										<li>
+											Created and organized files containing sensitive student
+											documentation.
+										</li>
+										<li>
+											Composed mass emails to students and professors on behalf
+											of the department.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					{window.innerWidth >= 1280 ? (
+						<div className="space-holder">
+							<div className="front" />
+							<div className="back" />
+						</div>
+					) : null}
 				</div>
 			</div>
 		);
