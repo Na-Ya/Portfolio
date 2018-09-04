@@ -12,9 +12,9 @@ const About = () => {
 			<div className="about-content">
 				<p>
 					Hi, I’m Nabil and I’m a fullstack software engineer with experience in
-					JavaScript, React.js, Redux, Node.js, and Express.js. I’m currently
-					looking for opportunities at a value driven company that is passionate
-					about their product.{' '}
+					HTML, CSS, JavaScript, React.js, Redux, Node.js, and Express.js. I’m
+					currently looking for opportunities at a value driven company that is
+					passionate about their product.{' '}
 				</p>{' '}
 				<p>
 					{' '}
