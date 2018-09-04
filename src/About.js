@@ -8,6 +8,8 @@ const About = () => {
 				style={{
 					backgroundImage: `url(${profile})`
 				}}
+				alt="Profile image"
+				aria-label="Profile image"
 			/>
 			<div className="about-content">
 				<p>
