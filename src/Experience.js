@@ -9,11 +9,11 @@ class Experience extends Component {
 		this.resize = this.resize.bind(this);
 	}
 	componentDidMount() {
-		this.resize();
 		window.addEventListener('resize', this.resize);
 		window.addEventListener('resize', () => {
 			this.setState({ width: window.innerWidth });
 		});
+		this.resize();
 	}
 	resize(e) {
 		if (e) {
@@ -173,7 +173,7 @@ class Experience extends Component {
 							</div>
 						</div>
 					</div>
-					{window.innerWidth >= 1280 ? (
+					{window.innerWidth >= 849 ? (
 						<div className="space-holder">
 							<div className="front" />
 							<div className="back" />
