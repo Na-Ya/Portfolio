@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Projects = () => {
-	const projects = [1, 2, 3];
 	return (
 		<div id="projects-parent">
 			<h1>Projects</h1>
@@ -20,7 +19,10 @@ const Projects = () => {
 						</p>
 					</div>
 					<div className="project-image-parent">
-						<img src="https://i.imgur.com/LApgIyP.gif" />
+						<img
+							alt="Gif of RepliCode app in use"
+							src="https://i.imgur.com/LApgIyP.gif"
+						/>
 					</div>
 				</div>
 				<div className="project-links">
@@ -46,7 +48,10 @@ const Projects = () => {
 						</p>
 					</div>
 					<div className="project-image-parent">
-						<img src="https://i.imgur.com/c1CqMfH.png" />
+						<img
+							alt="cycleTracker app in use"
+							src="https://i.imgur.com/c1CqMfH.png"
+						/>
 					</div>
 				</div>
 				<div className="project-links">
