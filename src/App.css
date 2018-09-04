@@ -15,6 +15,9 @@ p {
 .pop {
 	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
+.center {
+	text-align: center;
+}
 /* navbar header  */
 @media only screen and (min-width: 0px) {
 	header {
@@ -111,6 +114,9 @@ p {
 		background-repeat: no-repeat;
 		flex: 0 1 100vw;
 	}
+	.about-content {
+		flex-direction: column;
+	}
 }
 /* @media only screen and (min-width: 500px) {
 
@@ -139,14 +145,6 @@ p {
 		flex: 1 0 50vw;
 		min-width: 400px;
 	}
-
-	/* #about-parent img {
-		width: 100%;
-		height: auto;
-		max-width: 500px;
-		max-height: 500px;
-		border-radius: 5px;
-	} */
 }
 /* Projects section */
 @media only screen and (min-width: 0px) {
@@ -352,10 +350,7 @@ p {
 		flex-wrap: wrap;
 	}
 	#jobs-parent > div {
-		margin: 0 2rem;
-	}
-	.center {
-		text-align: center;
+		margin: 0 1rem;
 	}
 }
 

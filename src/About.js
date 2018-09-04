@@ -11,11 +11,17 @@ const About = () => {
 			/>
 			<div className="about-content">
 				<p>
-					Hot chicken air plant poutine, cliche mumblecore gentrify chillwave.
-					Health goth ethical hexagon salvia freegan mlkshk normcore meggings
-					raw denim enamel pin messenger bag squid literally. Bushwick aesthetic
-					master cleanse lomo, coloring book forage before they sold out vegan
-					swag craft beer butcher brooklyn flannel pug.
+					Hi, I’m Nabil and I’m a fullstack software engineer with experience in
+					JavaScript, React.js, Redux, Node.js, and Express.js. I’m currently
+					looking for opportunities at a value driven company that is passionate
+					about their product.{' '}
+				</p>{' '}
+				<p>
+					{' '}
+					I love to solve problems and am looking forward to being a part of an
+					engineering team that fosters learning and growth. When I’m not coding
+					I enjoy hiking, biking, and cooking. You’ll often find me tinkering in
+					the kitchen making sauces and sodas.
 				</p>
 			</div>
 		</div>
