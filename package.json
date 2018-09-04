@@ -1,18 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-anchor-link-smooth-scroll": "^1.0.11",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "react-scrollspy": "^3.3.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"react": "^16.4.1",
+		"react-anchor-link-smooth-scroll": "^1.0.11",
+		"react-dom": "^16.4.1",
+		"react-scripts": "1.1.4",
+		"react-scrollspy": "^3.3.5"
+	},
+	"homepage": "https://na-ya.github.io/Portfolio/",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	}
 }
