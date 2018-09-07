@@ -9,7 +9,6 @@ const NavBar = () => {
 	window.addEventListener('scroll', function(e) {
 		if (window.scrollY > offsetHeader) {
 			let navlinks = document.getElementById('nav-links');
-			console.log(navlinks.offsetHeight);
 
 			navlinks.classList.add('newfixed');
 		} else if (window.scrollY < offsetHeader) {
