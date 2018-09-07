@@ -9,7 +9,7 @@
 		"react-scripts": "1.1.4",
 		"react-scrollspy": "^3.3.5"
 	},
-	"homepage": "https://na-ya.github.io/Portfolio/",
+	"homepage": "https://Na-Ya.github.io/Portfolio",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
