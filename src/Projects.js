@@ -26,9 +26,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<div className="project-links">
-					<a href="https://github.com/RepliCode/RepliCode">
-						&nbsp;GitHub&nbsp;{' '}
-					</a>
+					<a href="https://github.com/RepliCode/RepliCode">GitHub</a>
 					<h3>||</h3>
 					<a href="https://replicode.herokuapp.com/">App Link</a>
 				</div>

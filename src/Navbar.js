@@ -3,15 +3,14 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 
 const NavBar = () => {
-	const offsetHeader = document.documentElement.clientHeight * 0.1;
 	const offset = document.documentElement.clientHeight * 0.1;
 
 	window.addEventListener('scroll', function(e) {
-		if (window.scrollY > offsetHeader) {
+		if (window.scrollY > offset) {
 			let navlinks = document.getElementById('nav-links');
 
 			navlinks.classList.add('newfixed');
-		} else if (window.scrollY < offsetHeader) {
+		} else if (window.scrollY < offset) {
 			let navlinks = document.getElementById('nav-links');
 			navlinks.classList.remove('newfixed');
 		}

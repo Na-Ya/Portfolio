@@ -87,7 +87,6 @@ p {
 		font-size: 1.5rem;
 	}
 	.nav-link:hover {
-		margin: 0 1rem;
 		font-size: 1.6rem;
 	}
 	#name {
@@ -186,7 +185,7 @@ p {
 		text-decoration: none;
 		color: white;
 		border: 1px solid white;
-		padding: 0px 3px;
+		padding: 0 8px;
 		border-radius: 3px;
 	}
 	.project-links a:hover {
@@ -272,7 +271,7 @@ p {
 		color: white;
 	}
 	.job-info-parent-back li {
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 	}
 	.job-info-parent-back h3 {
 		text-align: center;

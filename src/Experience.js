@@ -13,7 +13,11 @@ class Experience extends Component {
 		window.addEventListener('resize', () => {
 			this.setState({ width: window.innerWidth });
 		});
-		this.resize();
+		document.addEventListener('readystatechange', event => {
+			if (event.target.readyState === 'complete') {
+				this.resize();
+			}
+		});
 	}
 	resize(e) {
 		if (e) {
@@ -33,9 +37,6 @@ class Experience extends Component {
 			}
 		}
 		for (let i = 0; i < fronts.length; i++) {
-			if (greatestHeight < 407) {
-				greatestHeight = 407;
-			}
 			fronts[i].style.height = greatestHeight + 'px';
 			backs[i].style.height = greatestHeight + 'px';
 		}
