@@ -33,6 +33,9 @@ class Experience extends Component {
 			}
 		}
 		for (let i = 0; i < fronts.length; i++) {
+			if (greatestHeight < 407) {
+				greatestHeight = 407;
+			}
 			fronts[i].style.height = greatestHeight + 'px';
 			backs[i].style.height = greatestHeight + 'px';
 		}
