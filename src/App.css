@@ -341,6 +341,7 @@ p {
 	.back {
 		width: 40vw;
 		min-width: 350px;
+		min-height: 407px;
 	}
 	#jobs-parent {
 		display: flex;
