@@ -4,8 +4,9 @@ import Scrollspy from 'react-scrollspy';
 
 const NavBar = () => {
 	const offset = document.documentElement.clientHeight * 0.1;
-
+	console.log('offset', offset);
 	window.addEventListener('scroll', function(e) {
+		console.log('window scroll', window.scrollY);
 		if (window.scrollY > offset) {
 			let navlinks = document.getElementById('nav-links');
 
@@ -33,7 +34,7 @@ const NavBar = () => {
 							'contact-parent'
 						]}
 						currentClassName="is-current"
-						offset={-offset}
+						offset={-offset - 1}
 					>
 						<li className="nav-link">
 							<AnchorLink href="#about-parent" offset={offset}>
